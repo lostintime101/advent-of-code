@@ -82,25 +82,6 @@
 # PART 2
 
 
-def tail_reaction(H, T):
-
-    x_diff = T[0] - H[0]
-    y_diff = T[1] - H[1]
-
-    if x_diff > 1: 
-        T[0] -= 1
-        T[1] = H[1]
-    elif x_diff < -1: 
-        T[0] += 1
-        T[1] = H[1]
-
-    if y_diff > 1: 
-        T[1] -= 1
-        T[0] = H[0]
-    elif y_diff < -1: 
-        T[1] += 1
-        T[0] = H[0]
-
 def tail_reaction(early, late):
 
     x_diff = late[0] - early[0]
