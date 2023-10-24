@@ -137,6 +137,7 @@ for monkey in monkeys:
     monkey["Total inspections"] = 0
     print(monkey)
 
+# THIS IS THE KEY: YOU NEED TO MULTIPLY ALL THE DENOMINATORS IN ANY DIVISION TOGETHER TO GET THE CORRECT NUMBER TO MODULO WITH 
 modulator = 1
 for monkey in monkeys:
     modulator *= (modulator * monkey["Test"][-1])
@@ -160,8 +161,6 @@ for round in range(1, 10001):
             else:
                 monkeys[monkey["If false"]]["Starting items"].append(curr_item)
                 
-    
-    # 
     if round in [1,20,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000]:
         print("Round: ", round)
         for monkey in monkeys:
